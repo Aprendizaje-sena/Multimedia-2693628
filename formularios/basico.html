@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="icon" href="img/icon_pestaña.jpg">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!--el encabezado del sitio-->
+    <header>
+        <h1>¿Que son los formularios?</h1>
+    </header>
+     <!--el contenido del sitio-->
+    <div class="contenido">
+        <!--contenedor del formulario-->
+      <form action="#" class="form-basico">
+        <!--contenedor del titulo del formulario-->
+        <div class="titulo">
+            <h2>Inputs Basicas</h2>
+        </div>
+      
+        <div class="entrada">
+            <label>Tipo texto</label>
+            <input type="text" placeholder="digite un texto">
+        </div>
+        <div class="entrada">
+            <label>Tipo email</label>
+            <input type="email" placeholder="Digite su correo">
+        </div>
+        <div class="entrada">
+            <label>Tipo Password</label>
+            <input type="password" placeholder="Digite una contraseña">
+        </div>
+        <div class="entrada">
+            <label>Tipo Fecha</label>
+            <input type="date">
+        </div>
+
+        <div class="entrada">
+            <label>Tipo menu deplegable</label>
+           <select name="select">
+            <option>opcion 1</option>
+            <option>opcion 2</option>
+            <option>opcion 3</option>
+            <option>opcion 4</option>
+            <option>opcion 5</option>
+            <option>opcion 6</option>
+           </select>
+        </div>
+        <div class="entrada">
+            <label>Entrada tipo caja de verificacion (radio)</label>
+            <div class="opciones">
+                <div>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Opcion 1</span>
+                   </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Opcion 2</span>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="radio" name="radio">
+                        <span>Opcion 3</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="entrada">
+            <label>Tipo caja de verificacion</label>
+            <input type="checkbox"><label>Acepto terminos y condiciones</label>
+        </div>
+        
+        <div class="boton">
+            <input type="submit"  value="Guardar">
+        </div>
+      </form>
+    </div>
+    <footer>
+     <!--menu de navegacion-->
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="basico.html" class="activo">Basico</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="acceso.html">Iniciar Sesion</a></li>
+            <li><a href="validar.html">Validacion</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

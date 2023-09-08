@@ -1,0 +1,493 @@
+/*------------------------------
+  CONFIGURACIÓN BÁSICA
+------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* renderizar elementos HTML 5 como bloque */
+
+header,
+footer,
+section,
+aside,
+nav,
+article {
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    padding: 22px 0;
+    width: 940px;
+    font: 13px/22px Helvetica, Arial, sans-serif;
+    background: #F0F0F0;
+}
+
+h1,
+h2 {
+    font-size: 28px;
+    line-height: 44px;
+    padding: 22px 0;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 11px 0;
+}
+
+p {
+    padding-bottom: 22px;
+}
+.titulo {
+    font-size: 50px;
+    color: #7e7468;
+    margin-top: -50px;
+    margin-left: 100px;  
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    box-shadow: 3px 3px 7px #777;
+    transition: transform .2s;
+
+}
+.logo:hover {
+    transform: scale(1.5);
+}
+
+
+/*------------------------------
+ MENU DE NAVEGACION
+------------------------------*/
+
+nav {
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+}
+
+.navegacion {
+    width: 100%;
+    height: 40px;
+    background: #444343;
+    align-content: center;
+    z-index: 3;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 10px 20px;
+    color: #dfe0d9;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #d9f499;
+    transition: all .3s;
+}
+
+.img_inicio {
+    position: absolute;
+    margin-top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 7px #777;
+    transition: transform .2s;
+}
+
+
+/* Submenu*/
+
+.submenu {
+    position: absolute;
+    width: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    background: linear-gradient(to top, #222, #898b86, #222);
+    align-content: center;
+    border-radius: 5px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: #d9f499;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu li a:hover {
+    color: #e9f0e3;
+    transition: all .3s;
+}
+
+
+/*------------------------------
+ INTRODUCCION
+------------------------------*/
+
+.banner {
+    display: flex;
+    margin-top: 140px;
+    width: 100%;
+}
+
+#intro {
+    display: flex;
+    position: relative;
+    margin-top: 140px;
+    padding: 44px;
+    background: #5f5d5b;
+    background-size: 100%;
+    border-radius: 22px;
+}
+
+#intro h2,
+#intro p {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+#intro h2 {
+    display: flex;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    color: #f5ddab;
+    font-size: 30px;
+}
+
+#intro p {
+    padding: 20PX;
+    color: #f5ddab;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#intro img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* Border-radius  */
+    border-radius: 22px;
+}
+
+
+/*------------------------------
+ BANNER
+------------------------------*/
+
+.banner1 {
+    display: flex;
+    margin-top: 40px;
+    width: 100% !important;
+    height: 400px !important;
+}
+
+
+/*------------------------------
+ DISEÑO DEL ÁREA DE CONTENIDO Y BARRA LATERAL
+------------------------------*/
+
+#content {
+    display: table;
+}
+
+#mainContent {
+    display: table-cell;
+    width: 620px;
+    padding-right: 22px;
+}
+
+aside {
+    display: table-cell;
+    width: 300px;
+}
+
+
+/*------------------------------
+ ENTRADA EN EL BLOG
+------------------------------*/
+
+.blogPost header p,
+.blogPost header p a {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+}
+
+.blogPost header p a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.blogPost div {
+    /* El recuento de columnas  */
+    column-count: 2;
+    column-count: 2;
+    /* El espacio entre columnas  */
+    column-gap: 22px;
+    column-gap: 22px;
+    text-align: justify;
+}
+
+.blogPost img {
+    margin: 22px 0;
+    box-shadow: 3px 3px 7px #777;
+    border-radius: 5px;
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+/*------------------------------
+ CONTENIDO PAGINAS DELITOS
+------------------------------*/
+
+.header__contenido {
+    margin-top: 40px;
+}
+
+.contenido header p,
+.contenido header p a {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+}
+
+.contenido header p a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenido div {
+    /* El recuento de columnas  */
+    column-count: 1;
+    /* El espacio entre columnas  */
+    column-gap: 22px;
+    text-align: justify;
+}
+
+.contenido iframe {
+    margin: 22px 0;
+    box-shadow: 3px 3px 7px #777;
+    border-radius: 5px;
+    width: 600px;
+    height: 400px;
+    float: inline-end;
+    margin-right: 20px;
+}
+
+.contenido img {
+    margin: 22px 0;
+    box-shadow: 3px 3px 7px #777;
+    border-radius: 5px;
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+/*------------------------------
+ COMENTARIOS
+------------------------------*/
+
+#comments {
+    margin-top: 21px;
+    padding-top: 22px;
+    border-top: 1px solid #d7d7d7;
+}
+
+#comments article {
+    display: table;
+    padding: 22px;
+}
+
+#comments article:nth-child(odd) {
+    padding: 21px;
+    background: #E3E3E3;
+    border: 1px solid #d7d7d7;
+    border-radius: 11px;
+}
+
+#comments article header {
+    display: table-cell;
+    width: 220px;
+    padding-right: 22px;
+}
+
+#comments article header a {
+    display: block;
+    font-weight: bold;
+    color: #000;
+}
+
+#comments article header a:hover {
+    text-decoration: none;
+}
+
+#comments article p {
+    padding: 0;
+}
+
+
+/*------------------------------
+ FORMULARIO DE COMENTARIOS
+------------------------------*/
+
+form {
+    margin-top: 21px;
+    padding-top: 22px;
+    border-top: 1px solid #d7d7d7;
+}
+
+form p {
+    display: table;
+    margin-bottom: 22px;
+    padding: 0 22px;
+}
+
+form label {
+    display: table-cell;
+    width: 140px;
+    padding-right: 20px;
+    text-align: right;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="url"] {
+    display: table-cell;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    display: table-cell;
+    width: 80px;
+    height: 30px;
+    background-color: #353232;
+    border-radius: 5px;
+    color: #f0f0e6;
+    margin-left: 162px;
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #d7d7d7;
+}
+
+
+/*------------------------------
+BARRA LATERAL
+------------------------------*/
+
+aside section {
+    margin: 22px 0 0 22px;
+    padding: 11px 22px;
+    border-radius: 11px;
+}
+
+aside section ul {
+    margin: 0 0 0 22px;
+    list-style: none;
+}
+
+aside section ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+aside section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*------------------------------
+ FOOTER
+------------------------------*/
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #444343;
+}
+
+footer div {
+    display: table;
+    margin: 0 auto;
+    padding: 44px 0;
+    width: 940px;
+    color: #ebe4e4;
+}
+
+footer div section {
+    display: table-cell;
+    width: 300px;
+}
+
+footer div #blogroll {
+    text-align: justify;
+    padding-left: 40px;
+}
+
+footer h3 {
+    color: #FFF;
+    padding-left: 40px;
+}
+
+footer a {
+    color: #999;
+}
+
+footer a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer ul {
+    margin: 0 0 0 40px;
+    list-style: square;
+    color: #565656;
+}
+
+footer ul li a {
+    display: block;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>facebook</title>
+    <link rel="icon" href="img/sitio/icon_pag.jpg">
+    <link rel="stylesheet" href="css/estilo_sitio.css">
+</head>
+<body>
+    <!--este es el menu-->
+    <header>
+        <nav>
+            <a href="#intro">Inicio</a>
+            <a href="#delitos">Delitos</a>
+            <span>
+                <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <a href="#tips">Tips</a>
+            <a href="#contactenos">Contactenos</a>
+        </nav>
+    </header>
+
+    <!--secciones del sitio web-->
+    
+    <section id="intro" class="bloque">
+        <!--esta es la seccion de introduccion a la narrativa-->
+        <div class="contenido">
+            <h1>Facebook... la otra cara del internet</h1>
+        </div>
+    </section>
+
+    <!--esta es la seccion delitos-->
+    <section id="delitos" class="bloque">
+        <h2>Delitos</h2>
+        <div class="contenido">
+            <!--contenedor de los enlaces a la pagina-->
+            <div class="item delito1">
+                <div class="overlay"></div>
+                <a href="./paginas/sexting.html">
+                    <h2 class="titulo">Sexting</h2>
+                </a>
+            </div>
+            <div class="item delito2">
+                <div class="overlay"></div>
+                <a href="./paginas/phishing.html">
+                    <h2 class="titulo">Phishing</h2>
+                </a>
+            </div>
+            <div class="item delito3">
+                <div class="overlay"></div>
+                <a href="./paginas/grooming.html">
+                    <h2 class="titulo">Grooming</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+<!--esta es la seccion tips-->
+    <section id="tips" class="boque">
+        <!--este es el contenedor para el contenido de pa pagina tips-->
+        <div class="contenido">
+            <!--esta es la primera seccion de la izquierda del la pagina de tips-->
+            <div class="icon">
+                ¿Qué hacer para prevenir un ciberataque?
+                <span>
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </span>
+            </div>
+            <div class="contenido">
+                <p> Para prevenir la materialización de una amenaza o riesgo cibernético, en primer lugar es clave implementar estrategias de formación y concientización sobre seguridad informática y ciberseguridad para los empleados de la organización, considerados
+                    el eslabón más débil de la cadena. <br>Esto es fundamental hacerlo de manera consistente y efectiva para lograr que todos entiendan la importancia de hacer un buen uso de los activos y de la información a la que tienen acceso, así
+                    como tener cuidado con las contraseñas que utilizan y estar alertas ante posibles casos de phishing, malware u otros ataques. <br>Adicional a esto, las empresas deben estar preparadas para evitar un ciberataque, es decir contar con
+                    herramientas y desarrollar prácticas que les permitan detectar a tiempo las vulnerabilidades y debilidades de sus sistemas para corregirlas a tiempo, por ejemplo, el hacking ético.
+                </p>
+                <!--espacio del acordeon de opciones-->
+                <div class="item tip1">
+                    <div class="overlay"></div>
+                    <a href="./paginas/hola.html">
+                        <h2 class="titulo">Prevencion</h2>
+                    </a>
+                </div>
+
+                <div class="item tip2">
+                    <div class="overlay"></div>
+                    <a href="./paginas/phishing.html">
+                        <h2 class="titulo">Antivirus</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--esta es la seccion de contacto-->
+    <section id="contactenos" class="bloque">
+        <!--contenedor de contenido-->
+        <div class="contenido">
+            <!--contenedor de todos los datos-->
+            <div class="datos">
+                <!--contenedor de cada uno de los datos (item) se repite por cada dato-->
+                <div class="item">
+                    <!--este es el contenedor del icono-->
+                    <div class="icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <!--contenedor de la informacion del dato-->
+                    <div class="datos__dir">
+                        <h3>Direccion</h3>
+                        <h4>calle 30 # 2este-90, Soacha, Cundinamarca</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="datos__tel">
+                        <h3>Telefono</h3>
+                        <h4>(57)-601-8794523</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="datos__email">
+                        <h3>Email</h3>
+                        <h4>cibersecurityco@securitycolombia.co</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="datos__whass">
+                        <h3>Whatsapp</h3>
+                        <h4>3233965626</h4>
+                    </div>
+                </div>
+            </div>
+                <!--este es el contenedor del formulario-->
+                <div class="formulario">
+                    <h3>Escribenos</h3>
+                    <form action="#">
+                        <div class="info">
+                            <label>Nombre</label> 
+                            <input type="text" name="nom">
+                        </div>
+                        <div class="info">
+                            <label>Apellidos</label> 
+                            <input type="text" name="ape">
+                        </div>
+                        <div class="info">
+                            <label for="">Email</label>
+                            <input type="email" name="correo">
+                        </div>
+                        <div class="info">
+                            <label for="">Mensaje</label> 
+                            <textarea name="mensaje" id="" cols="30" rows="7"></textarea>
+                        </div>
+                        <input type="submit" class="btn_enviar" value="Enviar">
+                    </form>
+                </div>
+        </div>
+</section>
+</body>
+</html>

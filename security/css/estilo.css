@@ -1,0 +1,402 @@
+ /*---------------
+CONFIGURACION GENERAL
+------------------
+*/
+ /*seleccione la tipografia para exportar la fuente desde google font https://fonts.google.com/
+ importela*/
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     /*permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ html {
+     /* configuracion de desplazamiento con CSSOM */
+     scroll-behavior: smooth;
+     /* La scroll-behavior es la propiedad que especifica si animar suavemente la posición de desplazamiento, en lugar de un salto directo, cuando el usuario hace clic en un enlace dentro de un cuadro desplazable.
+     aprendiz puede consultar en https://www.w3schools.com/cssref/pr_scroll-behavior.php*/
+ }
+ 
+ body {
+     display: flex;
+     overflow: hidden;
+ }
+ 
+ .bloque {
+     width: 100vw;
+     padding-top: 50px;
+     flex-shrink: 0;
+     height: 100vh;
+ }
+ /*---------------
+MENU DE NAVEGACION
+------------------
+*/
+ 
+ header {
+     position: fixed;
+     bottom: 0;
+     padding: 10px 0;
+     width: 100%;
+     background-image: linear-gradient( to right, #0b3b65, rgb(79, 62, 62), #0b3b65);
+     text-align: center;
+ }
+ 
+ header a {
+     display: inline-block;
+     margin: 0 20px;
+     text-decoration: none;
+     color: bisque;
+     padding: 10px;
+ }
+ 
+ .selected {
+     color: rgb(13, 105, 243);
+     transition: .3s;
+ }
+ 
+ header nav span {
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     line-height: 40px;
+     border: 2px solid #ecedf1;
+     border-radius: 50%;
+ }
+ 
+ header nav span i {
+     color: #f8fafd;
+
+ }
+ /*---------------
+CONGIGURACION PAGINA INICIO
+------------------
+*/
+ 
+ #intro {
+     background-image: url(/img/sitio/fondo_inicio.jpg);
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ #intro .contenido h2 {
+     font-size: 4rem;
+     text-align: center;
+     color: #e7e7dd;
+     text-shadow: 3px 3px 10px #494646;
+     position: relative;
+     animation: 3s aparecer forwards;
+ }
+ 
+ @keyframes aparecer {
+     0% {
+         opacity: 0;
+         top: 50px;
+     }
+     100% {
+         opacity: 1;
+         top: 0px;
+     }
+ }
+ /*---------------
+CONGIGURACION PAGINA DELITOS
+------------------
+*/
+ #delitos {
+     background-color: #e7e7dd;
+ }
+ 
+ #delitos h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ #delitos .contenido {
+     max-width: 90%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ #delitos .contenido .delito1 {
+     background-image:  url(/img/sitio/sexting2.jpg);
+ }
+ 
+ #delitos .contenido .delito2 {
+     background-image: url(/img/sitio/grooming.png);
+ }
+ 
+ #delitos .contenido .delito3 {
+     background-image: url(/img/sitio/phishing.jpg);
+ }
+ 
+ #delitos .contenido .delito4 {
+     background-image: url(/img/sitio/suplantacion.jpg);
+ }
+ 
+ #delitos .contenido .delito5 {
+     background-image: url(/img/sitio/ciberbullying.jpg);
+ }
+ 
+ #delitos .contenido .item {
+     width: 25%;
+     height: 400px;
+     background-size: cover;
+     background-position: center center;
+     margin: 0 10px;
+     transition: .7s;
+     position: relative;
+     border-radius: 5px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ #delitos .contenido .item:hover {
+     width: 90%;
+ }
+ 
+ #delitos .contenido .overlay {
+     position: absolute;
+     background: linear-gradient(to bottom, transparent 0.3%, black);
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+
+ #delitos .contenido .overlay .info{
+    position: absolute; 
+    padding: 30px;
+    color: #dbcfae;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+ #delitos .contenido .item .titulo {
+     position: absolute;
+     bottom: -10px;
+     letter-spacing: 2px;
+     left: 50%;
+     transform: translateX(-50%);
+     color: #e7e7dd;
+     font-style: 20px;
+     background-color: black;
+     padding: 10px 0;
+     width: 100%;
+     opacity: 0;
+     transition: .3s;
+ }
+ 
+ #delitos .contenido .item:hover .titulo {
+     bottom: -20px;
+     opacity: 1;
+ }
+ /*---------------
+CONGIGURACION PAGINA TIPS
+------------------
+*/
+ 
+ #tips {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(transparent, black), url(/img/sitio/tips.jpg);
+     background-size: cover;
+     color: #e2dddd;
+ }
+ 
+ #tips .icon {
+     font-size: 40px;
+     font-weight: bold;
+     margin-top: 100px;
+ }
+ 
+ #tips .icon span {
+     color: cadetblue;
+     font-size: 30px;
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     border: 3px solid cadetblue;
+     border-radius: 50%;
+     line-height: 50px;
+ }
+ 
+ #tips .icon i {
+     color: cadetblue;
+     margin-left: 7px;
+ }
+ 
+ #tips p {
+     width: 90%;
+     margin: 20px;
+     text-align: justify;
+ }
+ 
+ #tips h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ #tips .contenido {
+     max-width: 90%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ #tips .contenido .tips1 {
+     background-image: url(/img/sitio/g1.jpg);
+ }
+ 
+ #tips .contenido .tips2 {
+     background-image: url(/img/sitio/hackers.jpg);
+ }
+ 
+ #tips .contenido .tips3 {
+     background-image: url(/img/sitio/consecuencias.jpg);
+ }
+ 
+ #tips .contenido .item {
+     width: 25%;
+     height: 400px;
+     background-size: cover;
+     background-position: center center;
+     margin: 0 10px;
+     transition: .7s;
+     position: relative;
+     border-radius: 5px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ #tips .contenido .item:hover {
+     width: 90%;
+ }
+ 
+ #tips .contenido .overlay {
+     position: absolute;
+     background: linear-gradient(to bottom, transparent 80%, black);
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ #tips .contenido .item .titulo {
+     position: absolute;
+     bottom: -10px;
+     letter-spacing: 2px;
+     left: 50%;
+     transform: translateX(-50%);
+     color: #e7e7dd;
+     font-style: 20px;
+     background-color: black;
+     padding: 10px 0;
+     width: 100%;
+     opacity: 0;
+     transition: .3s;
+ }
+ 
+ #tips .contenido .item:hover .titulo {
+     bottom: -20px;
+     opacity: 1;
+ }
+ /*---------------
+CONGIGURACION PAGINA CONTACTENOS
+------------------
+*/
+ 
+ #contactenos {
+     background: linear-gradient(transparent, black), url(/img/sitio/contacto.jpg);
+     background-size: cover;
+ }
+ 
+ #contactenos .contenido {
+     padding-top: 20px;
+     max-width: 1100px;
+     margin: auto;
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ #contactenos .contenido .datos {
+     color: #f8fafd;
+     width: 40%;
+     padding-top: 50px;
+ }
+ 
+ #contactenos .contenido .datos .item {
+     margin-bottom: 70px;
+     display: flex;
+ }
+ 
+ #contactenos .contenido .datos .icono {
+     font-size: 30px;
+     margin-right: 20px;
+ }
+ 
+ #contactenos .contenido .formulario {
+     background-color: #e4dada;
+     width: 40%;
+     height: 460px;
+     padding-left: 40px;
+     padding-right: 40px;
+     color: #211f1f;
+ }
+ 
+ .formulario h3 {
+     color: #2d2567;
+     text-align: center;
+     padding: 10px;
+     font-size: 30px;
+ }
+ 
+ #contactenos .contenido .formulario .info {
+     margin-bottom: 20px;
+ }
+ 
+ .info label {
+     display: block;
+     color: #2d2567;
+     font-weight: bold;
+ }
+ 
+ .info input {
+     display: block;
+     width: 100%;
+     border: none;
+     border-bottom: 1px solid #4d4343;
+     padding: 5px;
+     outline: none;
+     background-color: #e4dada;
+ }
+ 
+ .info textarea {
+     width: 80px;
+     width: 100%;
+     border: none;
+     border-bottom: 1px solid #4d4343;
+     outline: none;
+     background-color: #e4dada;
+ }
+ 
+ .formulario .btn_enviar {
+     background-color: #0b3b65;
+     display: block;
+     border: none;
+     color: #e2dddd;
+     padding: 7px;
+     font-size: 16px;
+     font-weight: bold;
+ }

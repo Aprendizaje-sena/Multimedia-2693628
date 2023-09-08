@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <!--incluye el estilo del banner-->
+    <link rel="stylesheet" href="../css/estilo_banner.css">
+    <!--incluye libreria Jquery-->
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <title>Banner Dinamico</title>
+</head>
+
+<body>
+    <!--contenedor para el banner-->
+    <div id="banner">
+        <!--contenedor para el contenido del banner-->
+        <div id="contenedor-slider" class="contenedor-slider">
+            <!--contenedor para las imagenes dentro del contenido del banner-->
+            <div id="slider" class="slider">
+                <section class="slider__section"><img src="../img/banner/1.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="../img/banner/2.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="../img/banner/3.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="../img/banner/4.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="../img/banner/5.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="../img/banner/6.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="../img/banner/7.jpg" class="slider__img"></section>
+                <section class="slider__section"><img src="../img/banner/8.jpg" class="slider__img"></section>
+            </div>
+            <!--boton de desplazamiento izquierda del banner-->
+            <div id="btn-prev" class="btn-prev">&#60;</div>
+            <!--boton de desplazamiento derecha del banner-->
+            <div id="btn-next" class="btn-next">&#62;</div>
+        </div>
+    </div>
+    <!--llamado del comportamiento del banner-->
+    <script src="../js/banner.js"></script>
+</body>
+</html>

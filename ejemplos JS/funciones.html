@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <script src="calculadora.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<style>
+    #resultado{
+        font-size: 50px;
+        color: red;
+    }
+</style>
+<body>
+    <h1>Calculadora con funciones JavaScript</h1>
+
+    <p>estas funciones nos permiten hacer calculos sencillos:</p>
+    <form action="#">
+        <label>Digite numero</label>
+        <input  id="num1">
+
+        <label>Digite numero</label>
+        <input  id="num2">
+
+        <p>seleccione la operacion que desea ejecutar:</p>
+        <input type="button" value="Sumar"    
+        onclick="sumar()">
+        <input type="button" value="Restar" onclick="restar()">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" value="Dividir" onclick="dividir()">
+
+        <p>El resultado de su operacion es:</p>
+      
+     
+    </form>
+
+</body>
+</html>
